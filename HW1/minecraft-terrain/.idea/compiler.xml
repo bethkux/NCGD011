@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="25">
+      <module name="MCWorldGeneration.main" target="12" />
+      <module name="MCWorldGeneration.MCWorldGenerationPluginJava.main" target="1.8" />
+      <module name="MCWorldGeneration.MCWorldGenerationPluginJava.test" target="1.8" />
+      <module name="MCWorldGeneration.MCWorldGenerationPluginKotlin.main" target="12" />
+      <module name="MCWorldGeneration.MCWorldGenerationPluginKotlin.test" target="12" />
+      <module name="MCWorldGeneration.test" target="12" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+name: MCWorldGenerationPlugin
+version: "1.0"
+author: Woitee
+main: cz.cuni.gamedev.nail123.mcworldgeneration.MCWorldGenerationPlugin
+description: A starting world generation in Minecraft
+
+load: STARTUP
+api-version: "1.13"
