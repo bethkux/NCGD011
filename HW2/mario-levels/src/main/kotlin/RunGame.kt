@@ -2,10 +2,11 @@ import adapters.UniversalMarioGame
 import engine.core.MarioLevelGenerator
 import engine.core.MarioLevelModel
 import engine.core.MarioTimer
+import levelGenerators.MyGenerator
 import levelGenerators.sample.GapLevelGenerator
 
 fun getLevel(): String {
-    val generator: MarioLevelGenerator = GapLevelGenerator()
+    val generator: MarioLevelGenerator = MyGenerator()
 
     val level = generator.getGeneratedLevel(
         MarioLevelModel(150, 16),
@@ -25,16 +26,16 @@ fun main() {
     val level = getLevel()
 
     // OLD Baumgarten agent
-//    val agent = agents.robinBaumgarten.Agent()
+    val agent = agents.robinBaumgarten.Agent()
     // NEW Sosvald agent (better as validator)
-//    val agent = mff.agents.astar.Agent()
+    //val agent = mff.agents.astar.Agent()
     // HUMAN control (S = jump, A = run/shoot)
-    val agent = agents.human.Agent()
+    //val agent = agents.human.Agent()
 
     val results = game.runGame(
             agent,
             level,
-            200,
+            100,
             0,
             true
     )
